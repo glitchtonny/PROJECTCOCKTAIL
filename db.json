@@ -34,7 +34,7 @@
       "id": "6",
       "name": "old cuban",
       "image": "https://www.thecocktaildb.com/images/media/drink/eo8gfx1699022995.jpg",
-      "likes": null
+      "likes": 0
     },
     {
       "id": "7",
@@ -46,7 +46,7 @@
       "id": "8",
       "name": "mauresque",
       "image": "https://www.thecocktaildb.com/images/media/drink/duwfa11686236556.jpg",
-      "likes": 0
+      "likes": null
     },
     {
       "id": "f05d",
@@ -58,10 +58,16 @@
       "id": "6331",
       "name": "old cuban",
       "image": "https://www.thecocktaildb.com/images/media/drink/eo8gfx1699022995.jpg",
-      "likes": 0
+      "likes": null
     },
     {
       "id": "5d87",
+      "name": "long island tea",
+      "image": "https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg",
+      "likes": null
+    },
+    {
+      "id": "3842",
       "name": "long island tea",
       "image": "https://www.thecocktaildb.com/images/media/drink/nkwr4c1606770558.jpg",
       "likes": 0

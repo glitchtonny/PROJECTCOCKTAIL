@@ -9,9 +9,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    float:right;
-    
-    
+    float:right; 
   }
   
   .topnav a {
@@ -64,7 +62,9 @@ body {
     justify-content: center;
 
 }
-
+.body-ing{
+  border: solid 2px;
+}
 #row{
     display: flex;
     background-color: azure;
@@ -83,6 +83,10 @@ body {
     border: 2px solid;
     height: 600px;
   }
+
+  .ingredients{
+    display: flex;
+  }
   h2{
     color: red;
     font-style: italic;
@@ -95,6 +99,8 @@ body {
   }
   h3{
     color: red;
+    text-decoration: underline 4px;
+    
   }
   .column {
     float: left;
@@ -102,10 +108,11 @@ body {
   }
 
   .disc{
-    background-image: url(images/discimg.jpg);
+    background-image: url(images/disc2.jpeg);
     height: 300px;
     color: red;
-    padding-bottom: 90px;
+    margin-top: 10px;
+    padding-bottom: 150px;
     padding-top: 0px;
     font-size: 40px;
     display: flex;
@@ -176,7 +183,7 @@ body {
     width: max-content;
     color: whitesmoke;
     font-size: 18px;
-    justify-self: center;
+    justify-self:flex-end;
   }
 
   button:hover {
@@ -192,7 +199,7 @@ body {
     background-color: transparent;
     padding: 1rem;
     border: grey solid 2px;
-    width: 15rem;
+    width: 19rem;
     height: 12rem;
     display: inline-grid;
     margin: 1rem 2rem;
@@ -237,6 +244,12 @@ body {
   p{
     padding-top: 50px;
     justify-content: end;
+  }
+
+  .col-md-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   

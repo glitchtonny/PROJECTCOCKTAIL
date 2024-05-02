@@ -42,8 +42,7 @@ let h4 = document.createElement("h4")
   
 
   
-
-let p = document.createElement("p")
+  let p = document.createElement("p")
   p.innerText =`${drink.likes} likes` 
   flipCardFront.append(p)
 
@@ -51,11 +50,12 @@ let p = document.createElement("p")
   card.append(button)
   button.className = "like-btn"
   button.id = drink.id
-  button.innerText = "Like"
+  button.innerText = "♥"
   button.addEventListener('click',(e) => {
-  //  console.log("event", e)
+  console.log("event", e)
     e.preventDefault()
-    increment(e)}
+    increment(e) ++
+}
     )
 
 }
@@ -63,22 +63,26 @@ let p = document.createElement("p")
 
 function increment(e) {
   
-    let count = parseInt(e.target.previousElementSibling.innerText) + 1;
+    let count = parseInt(e.target.innerText) +1;
+  
   
   
     fetch(`http://localhost:3000/cocktail/${e.target.id}`, {
       method: "PATCH",
       
-      body: JSON.stringify({
+     body: JSON.stringify({
         likes: count,
       }),
-    })
-      .then((response) => response.json())
-      .then((json) => console.log(json));
+   })
+     .then((response) => response.json())
+     .then((json) => console.log(json));
       
-  }
+}
 
-  function addNewToy() {
+
+ 
+
+  function addNewDrink() {
     const getButton = document.querySelector(".add-drink");
   
     getButton.addEventListener("submit", (event) => {
@@ -102,4 +106,6 @@ function increment(e) {
       console.log(input[1].value);
     });
   }
-  addNewToy()
+  addNewDrink()
+
+
