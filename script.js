@@ -54,7 +54,7 @@ let h4 = document.createElement("h4")
   button.addEventListener('click',(e) => {
   console.log("event", e)
     e.preventDefault()
-    increment(e) ++
+    increment(e)
 }
     )
 
@@ -63,7 +63,7 @@ let h4 = document.createElement("h4")
 
 function increment(e) {
   
-    let count = parseInt(e.target.innerText) +1;
+    let count = parseInt(e.target.previousElementSibling.innerText) +1;
   
   
   
