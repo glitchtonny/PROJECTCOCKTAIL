@@ -15,9 +15,9 @@
                 <img src="cocktail-glass-design-menu-background-vector-DY3192-removebg-preview(1).png" height="80px">
             </div>
                <div class="topnav">
-                   <a class="active" href="">HOME</a>
-                   <a href="">ABOUT</a>
-                   <a href="">DISCOVER</a>
+                   <a class="active" href="#home">HOME</a>
+                   <a href="#about">ABOUT</a>
+                   <a href="#discover">DISCOVER</a>
                  </div>
 
         </section>
@@ -25,12 +25,12 @@
     </header>
     <div class="container">
         <!--Banner-->
-        <div class=" main-banner">
+        <div class=" main-banner" id="home">
               <h1>CRAFTED COCKTAILS</h1>
         </div>
         <!--about section -->
         
-        <div class="row">
+        <div class="row" id="about">
             <div class="column">
               <!-- content for the first column -->
               <h2>ABOUT COCKTAILS</h2>
@@ -101,16 +101,28 @@
 
         
              <!--discover section-->
-           <div class="disc">
+           <div class="disc" id="discover">
+            
              <h1>DISCOVER NEW DRINKS</h1>
             
+            
           </div>
+          
 
           
 
 
         <div id="drink-collection">
           <h1><U>LIST OF DRINKS</h1>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">MENU</button>
+          <div class="dropdown-content">
+            <a class="active" href="#home">HOME</a>
+               <a href="#about">ABOUT</a>
+               <a href="#discover">DISCOVER</a>
+          </div>
         </div>
 
 
@@ -145,6 +157,8 @@
 
             </form>
           </div>
+
+          
 
 
           <div class="col-md-12">
