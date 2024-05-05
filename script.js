@@ -1,10 +1,26 @@
 function fetchDrinks(){
-    fetch("http://localhost:3000/cocktail")
+    fetch("https://api.myjson.online/v1/records/640ff52d-a7c1-41ff-bdb1-27130c6d858a")
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        data.forEach((drink) => addDrink(drink))
+
+        
+        if (data.data) {
+          // Access the drinks property and iterate over its values
+          Object.values(data.data).forEach(drink => {
+              // Assuming addDrink is a function that adds the drink to the UI
+              addDrink(drink);
+          });
+      } else {
+          console.error("No drinks found in the data");
+      }
+        
+      
     })
+    .catch(error => {
+      console.error("Error fetching drinks:", error);
+      
+  });
 }
 fetchDrinks()
 
@@ -67,8 +83,12 @@ function increment(e) {
   
   
   
-    fetch(`http://localhost:3000/cocktail/${e.target.id}`, {
+    fetch(`https://api.myjson.online/v1/records/640ff52d-a7c1-41ff-bdb1-27130c6d858a/${e.target.class}`, {
       method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept" : "application/json"
+      },
       
      body: JSON.stringify({
         likes: count,
@@ -99,7 +119,7 @@ function increment(e) {
         }),
       };
   
-      fetch("http://localhost:3000/cocktail", postRequest)
+      fetch("https://api.myjson.online/v1/records/640ff52d-a7c1-41ff-bdb1-27130c6d858a", postRequest)
       .then((res) => res.json())
       .then(res => console.log(res)) 
       console.log(input[0].value);
@@ -107,5 +127,16 @@ function increment(e) {
     });
   }
   addNewDrink()
+
+
+  
+
+
+
+
+
+  
+
+
 
 

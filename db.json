@@ -4,7 +4,7 @@
       "id": "1",
       "name": "old fashioned",
       "image": "https://www.thecocktaildb.com/images/media/drink/eo8gfx1699022995.jpg",
-      "likes": null
+      "likes": 0
     },
     {
       "id": "2",
@@ -34,13 +34,13 @@
       "id": "6",
       "name": "old cuban",
       "image": "https://www.thecocktaildb.com/images/media/drink/eo8gfx1699022995.jpg",
-      "likes": 0
+      "likes": null
     },
     {
       "id": "7",
       "name": "gin tonic",
       "image": "https://www.thecocktaildb.com/images/media/drink/qcgz0t1643821443.jpg",
-      "likes": 0
+      "likes": null
     },
     {
       "id": "8",
