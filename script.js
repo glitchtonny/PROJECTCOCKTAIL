@@ -80,19 +80,19 @@ let h4 = document.createElement("h4")
 function increment(e) {
   
   let count = parseInt(e.target.previousElementSibling.innerText) + 1;  
-    console.log(count);
-    let myData = {
-      likes: count,
-    };
   
-    fetch(`https://api.myjson.online/v1/records/640ff52d-a7c1-41ff-bdb1-27130c6d858a/${event.target.id}`, {
+   
+  
+    fetch(`https://api.myjson.online/v1/records/640ff52d-a7c1-41ff-bdb1-27130c6d858a/${e.target.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
             "Accept" : "application/json"
           },
           
-        body: JSON.stringify(myData),
+          body: JSON.stringify({
+            likes: count,
+          })
       })
      .then((response) => response.json())
      .then((json) => console.log(json));

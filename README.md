@@ -3,7 +3,7 @@
 
 
 # Description 
-<p></p>
+<p>This application enables people to explore on the new drinks that are available.</p>
 <p></p>
 
 # sreenshot
